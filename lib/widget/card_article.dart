@@ -26,9 +26,9 @@ class CardArticle extends StatelessWidget {
         ),
         subtitle: Text(article.author!),
         onTap: () => Navigator.pushNamed(
-            context,
-            ArticleDetailPage.routeName,
-            arguments: article,
+          context,
+          ArticleDetailPage.routeName,
+          arguments: article,
         ),
       ),
     );

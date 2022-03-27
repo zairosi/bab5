@@ -12,8 +12,7 @@ class ArticlesResult {
   factory ArticlesResult.fromJson(Map<String, dynamic> json) => ArticlesResult(
     status: json["status"],
     totalResults: json["totalResults"],
-    articles: List<Article>.from(json["articles"]
-        .map((x) => Article.fromJson(x))
+    articles: List<Article>.from(json["articles"].map((x) => Article.fromJson(x))
     ),
   );
 }
